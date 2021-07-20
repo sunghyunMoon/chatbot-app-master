@@ -11,9 +11,7 @@
     "start": "node index.js",
     "backend": "nodemon index.js",
     "frontend": "npm run front --prefix client",
-    "dev": "concurrently \"npm run backend\"  \"npm run start --prefix client\"",
-    "deploy": "gh-pages -d build",
-    "predeploy": "npm run build"
+    "dev": "concurrently \"npm run backend\"  \"npm run start --prefix client\""
   },
   "author": "Jaewon Ahn",
   "license": "ISC",
