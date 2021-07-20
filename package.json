@@ -11,7 +11,9 @@
     "start": "node index.js",
     "backend": "nodemon index.js",
     "frontend": "npm run front --prefix client",
-    "dev": "concurrently \"npm run backend\"  \"npm run start --prefix client\""
+    "dev": "concurrently \"npm run backend\"  \"npm run start --prefix client\"",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "author": "Jaewon Ahn",
   "license": "ISC",
@@ -27,5 +29,6 @@
   "devDependencies": {
     "concurrently": "^4.1.0",
     "nodemon": "^1.18.10"
-  }
+  },
+  "homepage": "https://sunghyunmoon.github.io/chatbot-app-master"
 }
